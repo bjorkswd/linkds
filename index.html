@@ -1,0 +1,159 @@
+html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vizontine</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        section {
+            min-height: 100vh;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .produto {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .produto img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .preco {
+            font-size: 24px;
+            color: #4CAF50;
+            margin: 10px 0;
+        }
+
+        .botoes {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .botao-comprar {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            cursor: pointer;
+            border: none;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .botao-comprar:hover {
+            background-color: #45a049;
+        }
+
+        .contato {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Primeira Página -->
+    <section id="pagina1">
+        <header>
+            <h1>Vizontine</h1>
+        </header>
+
+        <div class="container">
+            <div class="produto">
+                <h2>Produto em Destaque</h2>
+                <div class="preco">R$ 99,90</div>
+                <div class="botoes">
+                    <!-- Botão que abre WhatsApp -->
+                    <a href="https://wa.me/SEU_NUMERO_AQUI" class="botao-comprar" target="_blank">
+                        Comprar Agora
+                    </a>
+                    <!-- Botão que leva para segunda página -->
+                    <a href="#pagina2" class="botao-comprar">
+                        Mais Informações
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Segunda Página -->
+    <section id="pagina2">
+        <div class="container">
+            <div class="produto">
+                <h2>Mais Informações do Produto</h2>
+                <p>Descrição detalhada do produto aqui...</p>
+                <div class="preco">R$ 99,90</div>
+                <div class="botoes">
+                    <!-- Botão que abre WhatsApp -->
+                    <a href="https://wa.me/SEU_NUMERO_AQUI" class="botao-comprar" target="_blank">
+                        Comprar Agora
+                    </a>
+                    <!-- Botão que volta para primeira página -->
+                    <a href="#pagina1" class="botao-comprar">
+                        Voltar
+                    </a>
+                </div>
+            </div>
+
+            <div class="contato">
+                <h3>Entre em Contato</h3>
+                <p>Entre em contato conosco para mais informações</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Vizontine - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
